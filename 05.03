@@ -1,0 +1,109 @@
+# Завдання1
+
+print("Twinkle, twinkle, little star,\n       How I wonder what you are! \n             Up above the world so high,\n             Like a diamond in the sky. \n Twinkle, twinkle, little star,\n       How I wonder what you are")
+
+
+# Завдання 2
+
+import math
+
+def kolo(radius):
+    ploshcha = math.pi * radius**2
+    return ploshcha
+
+radius = float(input("Введіть радіус кола: "))
+ploshcha_kola = kolo(radius)
+
+print("Радіус:", radius, "площа:", ploshcha_kola)
+
+
+# Завдання 3
+
+colorList = ["Red","Green","White" ,"Black"]
+print(colorList[0], colorList[-1] )
+
+
+# Завдання 4
+
+def calculate(n):
+    f = n + n*n + n*n*n
+    print (f)
+
+calculate(5)
+
+
+#Завдання 5
+
+numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 958,743, 527]
+
+for number in numbers:
+    if number == 237:
+        break
+    if number % 2 == 0:
+        print (number)
+
+
+# Завдання 6
+numbers = '01010101'
+def slice(mass):
+    masses = mass.split('0')
+
+    if mass [0] == '0':
+        masses = masses[1:]
+
+    for element in mass:
+        if element.count('1') != len(element):
+            return True
+    else:
+            return False
+print (slice(numbers))
+
+
+# Завдання 7
+
+m = 6
+n = 12
+for i in range(-n, n + 1, m):
+    if i % 2 == 0:
+        print(i, end = " ")
+
+
+# Завдання 8
+
+m = 6
+combinations = 25  
+
+for i in range(m - 1):
+    total_combinations *= 24
+
+print(combinations)
+
+
+# Завдання 9
+
+list = [4, 6, 7, 7,]
+
+L = [3, 6, 7]
+list.extend(L)
+print (list)
+
+list.insert (1, 3333)
+print (list)
+
+list.reverse()
+print (list)
+
+list.append(3)
+print(list)
+
+list.remove(3)
+print(list)
+
+list.sort()
+print(list)
+
+list.clear()
+print(list)
+
+
+
