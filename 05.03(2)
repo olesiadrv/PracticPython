@@ -1,0 +1,126 @@
+# Завдання1
+
+print("Twinkle, twinkle, little star,\n       How I wonder what you are! \n             Up above the world so high,\n             Like a diamond in the sky. \n Twinkle, twinkle, little star,\n       How I wonder what you are")
+
+
+# Завдання 2
+
+radius = float(input("Введіть радіус кола: "))
+
+area = 3.14 * radius ** 2
+
+print("Радіус:", radius, "площа:", area)
+
+
+# Завдання 3
+
+colorList = ["Red","Green","White" ,"Black"]
+print(colorList[0], colorList[-1] )
+
+
+# Завдання 4
+
+def calculate(n):
+    f = n + n*n + n*n*n
+    print (f)
+
+calculate(5)
+
+
+#Завдання 5
+
+numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 958,743, 527]
+
+for number in numbers:
+    if number == 237:
+        break
+    if number % 2 == 0:
+        print (number)
+   
+    
+
+
+# Завдання 6
+def check_sequence(sequence):
+    for i in range(len(sequence) - 1):
+        if sequence[i] == '0' and sequence[i + 1] == '1':
+            continue
+        elif sequence[i] == '1' and sequence[i + 1] == '0':
+            continue
+        else:
+            return False
+    return True
+
+
+sequence = "00110101010"
+
+print(check_sequence(sequence)) 
+ 
+
+
+# Завдання 7
+
+m = 6
+n = 12
+for i in range(-n, n + 1, m):
+    if i % 2 == 0:
+        print(i, end = " ")
+
+
+# Завдання 8
+
+m = 6
+combinations = 25  
+
+for i in range(m - 1):
+    total_combinations *= 24
+
+print(combinations)
+
+
+# Завдання 9
+
+list = [4, 6, 7, 7,]
+
+L = [3, 6, 7]
+list.extend(L)
+print (list)
+
+list.insert (1, 3333)
+print (list)
+
+list.reverse()
+print (list)
+
+list.append(3)
+print(list)
+
+list.remove(3)
+print(list)
+
+list.sort()
+print(list)
+
+list.clear()
+print(list)
+
+# Завдання 10
+student = {
+    "ID": 1,
+    "прізвище": "Іванов",
+    "Ім’я": "Іван",
+    "Група": "Група А",
+    "Курс": 2,
+    "Книги (борг)": ["Книга 1", "Книга 2", "Книга 3"],
+    "Статистика книг": ["Книга1", "Книга2", "Книга3", "Книга4"]  
+}
+
+while True:
+    user_input = input("Введіть команду (1 - вивести карту читача, 0 - вийти): ")
+    if user_input == "0":
+        print("Ви вийшли з програми.")
+        break
+    elif user_input == "1":
+        print(student)
+    elif user_input == "2"   
+        print("Візьміть книгу")
